@@ -2,12 +2,12 @@
 
 <package>
   <metadata minClientVersion="2.5">
-    <id>DotNetCore.Complie.Environment</id>
+    <id>DotNetCore.Compile.Environment</id>
     <version>1.0.0.0</version>
     <authors>NMSAzulX</authors>
     <owners>.NET Core Community</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectUrl>https://github.com/dotnetcore/Natasha</projectUrl>
+    <projectUrl>https://github.com/dotnetcore/DotNetCore.Complie.Environment</projectUrl>
     <license type="expression">MIT</license>
     <iconUrl>https://avatars2.githubusercontent.com/u/19404084</iconUrl>
     <description>为 Roslyn 引擎提供编译环境</description>

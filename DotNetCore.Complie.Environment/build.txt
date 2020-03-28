@@ -1,2 +1,0 @@
-﻿./nuget pack .\DotNetCore.Complie.Environment.nuspec -Build -Properties Configuration=Release  -Symbols
-./nuget push .\DotNetCore.Complie.Environment.nuspec -Source https://api.nuget.org/v3/index.json key
