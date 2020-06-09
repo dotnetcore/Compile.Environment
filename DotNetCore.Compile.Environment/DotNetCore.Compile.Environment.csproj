@@ -1,7 +1,34 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.0;</TargetFrameworks>
+    <PackageTags>roslyn;compilation;natasha;env;compile;ncc;</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>NMSAzulX</Authors>
+    <PackageIcon>19404084.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/dotnetcore/Compile.Environment</PackageProjectUrl>
+    <Copyright>.NET Core Community and Contributors</Copyright>
+    <Description>此包为 roslyn 动态编译的环境包</Description>
+    <Version>1.0.0-alpha6</Version>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="C:\Users\Administrator\Desktop\19404084.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\netstandard2.0\DotNetCore.Compile.Environment.targets" />
+    <None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netstandard2.0\DotNetCore.Compile.Environment.targets" />
+    <None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\netcoreapp3.0\DotNetCore.Compile.Environment.targets" />
+    <None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netcoreapp3.0\DotNetCore.Compile.Environment.targets" />
+  </ItemGroup>
 </Project>
