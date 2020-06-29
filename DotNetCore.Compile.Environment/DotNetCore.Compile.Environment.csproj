@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>DotNetCore.Compile.Environment</PackageId>
     <TargetFrameworks>netstandard2.0;netcoreapp3.0;</TargetFrameworks>
     <PackageTags>roslyn;compilation;natasha;env;compile;ncc;</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -13,7 +14,7 @@
     <PackageProjectUrl>https://github.com/dotnetcore/Compile.Environment</PackageProjectUrl>
     <Copyright>.NET Core Community and Contributors</Copyright>
     <Description>此包为 roslyn 动态编译的环境包</Description>
-    <Version>2.0.0.0</Version>
+    <Version>2.1.0-alpha1</Version>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
