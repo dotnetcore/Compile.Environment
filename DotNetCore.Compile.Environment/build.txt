@@ -1,2 +1,3 @@
-﻿./nuget pack .\DotNetCore.Compile.Environment.nuspec -Build -Properties Configuration=Release  -Symbols
-./nuget push .\DotNetCore.Compile.Environment.nuspec -Source https://api.nuget.org/v3/index.json key
+﻿用 VS 打包, 然后 nuget push 即可.
+
+./nuget push .\DotNetCore.Compile.Environment.3.0.0.nupkg {key} -Source https://api.nuget.org/v3/index.json

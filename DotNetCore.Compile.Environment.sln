@@ -1,9 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.Compile.Environment", "DotNetCore.Compile.Environment\DotNetCore.Compile.Environment.csproj", "{34E748D2-BBFC-4C72-9D75-F272895BF311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.Compile.Environment", "DotNetCore.Compile.Environment\DotNetCore.Compile.Environment.csproj", "{34E748D2-BBFC-4C72-9D75-F272895BF311}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{630B6428-8FFD-416A-BE9C-5C5BBD626B22}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "nuget", "nuget.exe", "{F876D415-93FE-44A5-9227-F9BE4BFD2823}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = E:\OpenSource\NCCGroup\Compile.Environment\nuget.exe
+		RemoteMachine = DESKTOP-KUHO93G
+		StartingDirectory = E:\OpenSource\NCCGroup\Compile.Environment
+		Environment = 默认值
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +31,14 @@ Global
 		{34E748D2-BBFC-4C72-9D75-F272895BF311}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E748D2-BBFC-4C72-9D75-F272895BF311}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E748D2-BBFC-4C72-9D75-F272895BF311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F876D415-93FE-44A5-9227-F9BE4BFD2823}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{F876D415-93FE-44A5-9227-F9BE4BFD2823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F876D415-93FE-44A5-9227-F9BE4BFD2823} = {630B6428-8FFD-416A-BE9C-5C5BBD626B22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5BA3560-7DE0-41DC-829A-D8080A735E69}
