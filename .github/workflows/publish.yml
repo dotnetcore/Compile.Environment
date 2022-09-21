@@ -13,8 +13,8 @@ jobs:
   publish:
     runs-on: windows-latest
     strategy:
-       matrix:
-          dotnet: ['3.1.x', '5.0.x','6.0.x']
+      matrix:
+         dotnet: ['3.x', '5.x','6.x']
           
     steps:
 
