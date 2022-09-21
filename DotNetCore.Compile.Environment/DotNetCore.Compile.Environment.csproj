@@ -11,7 +11,7 @@
 		<Version>3.2.0</Version>
 		<PackageReleaseNotes>发布最新版</PackageReleaseNotes>
 
-		<TargetFrameworks>netstandard2.0;netcoreapp3.1;net5.0;net6.0;</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<OutputType>Library</OutputType>
@@ -34,17 +34,20 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 
-
+		
+		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\netstandard2.1\DotNetCore.Compile.Environment.targets" />
+		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netstandard2.1\DotNetCore.Compile.Environment.targets" />
+		
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\netstandard2.0\DotNetCore.Compile.Environment.targets" />
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netstandard2.0\DotNetCore.Compile.Environment.targets" />
 		
-		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\net5.0\DotNetCore.Compile.Environment.targets" />
+		<!--<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\net5.0\DotNetCore.Compile.Environment.targets" />
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\net5.0\DotNetCore.Compile.Environment.targets" />
 		
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\net6.0\DotNetCore.Compile.Environment.targets" />
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\net6.0\DotNetCore.Compile.Environment.targets" />
 		
 		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="build\netcoreapp3.1\DotNetCore.Compile.Environment.targets" />
-		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netcoreapp3.1\DotNetCore.Compile.Environment.targets" />
+		<None Include="targets\DotNetCore.Compile.Environment.targets" Pack="true" PackagePath="buildTransitive\netcoreapp3.1\DotNetCore.Compile.Environment.targets" />-->
 	</ItemGroup>
 </Project>
