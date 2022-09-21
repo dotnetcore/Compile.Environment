@@ -14,12 +14,12 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-         dotnet: ['3.x', '5.x','6.x']
+         dotnet: ['6.x']
           
     steps:
 
     - name: Release Dll
-      run : dotnet build -c Release
+      run : dotnet build DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -c Release
 
     - name: Pack - Env
       run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -o .
