@@ -19,10 +19,10 @@ jobs:
     steps:
 
     - name: Release Dll
-      run : dotnet build DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -c Release
+      run : dotnet build ./DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -c Release
 
     - name: Pack - Env
-      run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -o .
+      run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release ./DotNetCore.Compile.Environment/DotNetCore.Compile.Environment.csproj -o .
 
     - name: Push to Nuget - Env
       run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
